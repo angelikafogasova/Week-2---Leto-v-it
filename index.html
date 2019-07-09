@@ -1,5 +1,7 @@
 <!doctype html>
 
+
+<!--Initial settings-->
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -9,6 +11,8 @@
     <meta name="author" content="Angelika Fogasova">
 </head>
 
+
+<!-- Users inputs-->
 <body>
     <header>
         <nav>
@@ -26,24 +30,37 @@
             <div>
                 <h3>What did you code today?</h3>
                 <label></label>
-			        <textarea name="status"></textarea>
+                    <textarea name="status"></textarea>
 		    </div>
-            </form>
     </section>
     <section>
-            <form>
-                <div>
-                    <select name="your programming lannguage" id="">
-                        <option value="Java">Java</option>
-                        <option value="C#">C#</option>
-                        <option value="Python">Python</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-            </form>
-        </section>
-        <hr>
+        <div>
+        <p>Put your photo here</p>
+        <input type="image">    
+        </div>
+    </section>
+    <section>
+        <div>
+            <p>What you're coding in?</p>
+                <select name="your programming lannguage" id="coding language">
+                    <option value="Java">Java</option>
+                    <option value="C#">C#</option>
+                    <option value="Python">Python</option>
+                    <option value="other">Other</option>
+                </select>
+        </div>
+        <br>
+        <div>
+            <label>Coding hours today</label>
+            <br>
+            <input type="number" name="coding hours" value="0">
+        </div>
+        </form>
+    </section>
+<hr>
 
+
+<!-- Friends' actions-->
     <section>
             <h3>What have your friends been up to?</h3>
         <article>
@@ -63,6 +80,9 @@
 <br>
 <br>
 <br>
+
+
+<!-- Footer-->
 <footer>
     <p><small>© Copyright 2019 by Angelika Fogasova. All rights reserved.</small></p>
 </footer>
