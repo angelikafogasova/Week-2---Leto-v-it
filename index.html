@@ -12,20 +12,28 @@
 </head>
 
 
-<!-- Users inputs-->
-<body>
-    <header>
+<!-- Header -->
+<header>
         <nav>
             <ul>
-                
+                <li>Home</li>
+                <li>Settings</li>
+                <li>Log out</li>
+                <li>Search</li>
             </ul>
         </nav>
     </header>
+
+<!-- User inputs-->
+<body>
 <main>
         <h1>FaceIT</h1>
         <p>Welcome to the social network where no one calls you a geek because we all are.</p>
+        <p>
+            <small><time>10th July 2019</time></small>
+        </p>
         <hr>
-    <section>
+    <section class="my post">
         <form>
             <div>
                 <h3>What did you code today?</h3>
@@ -33,28 +41,24 @@
                     <textarea name="status"></textarea>
 		    </div>
     </section>
-    <section>
-        <div>
+    <section class="my post">
         <p>Put your photo here</p>
-        <input type="image">    
-        </div>
+        <input type="image">  
     </section>
-    <section>
-        <div>
-            <p>What you're coding in?</p>
-                <select name="your programming lannguage" id="coding language">
-                    <option value="Java">Java</option>
-                    <option value="C#">C#</option>
-                    <option value="Python">Python</option>
-                    <option value="other">Other</option>
-                </select>
-        </div>
+    <section class="my post">
+        <p>What you're coding in?</p>
+            <select name="your programming lannguage" id="coding language">
+                <option value="Java">Java</option>
+                <option value="C#">C#</option>
+                <option value="Python">Python</option>
+                <option value="other">Other</option>
+            </select>
+    </section>
         <br>
-        <div>
-            <label>Coding hours today</label>
-            <br>
-            <input type="number" name="coding hours" value="0">
-        </div>
+    <section>
+        <label>Coding hours today</label>
+        <br>
+        <input type="number" name="coding hours" value="0">
         </form>
     </section>
 <hr>
@@ -63,14 +67,20 @@
 <!-- Friends' actions-->
     <section>
             <h3>What have your friends been up to?</h3>
-        <article>
-            <p><strong>František Horváth</strong></p>
+        <article class="friend post">
+            <p>
+                <img src="../Week-2---Leto-v-it/Images/male-avatar.png" alt="random male avatar" height="42" width="42">
+                <strong>František Horváth</strong>
+            </p>
             <p>Accenture</p>
             <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
         </article>
         
-        <article>
-            <p><strong>Jana Veselá</strong></p>
+        <article class="friend post">
+            <p>
+                <img src="../Week-2---Leto-v-it/Images/female-avatar.png" alt="random female avatar" height="42" width="42">
+                <strong>Jana Veselá</strong>
+            </p>
             <p>ESET</p>
             <img src="http://lorempixel.com/400/200/" alt="random picture">
             <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
@@ -83,8 +93,8 @@
 
 
 <!-- Footer-->
-<footer>
-    <p><small>© Copyright 2019 by Angelika Fogasova. All rights reserved.</small></p>
-</footer>
+    <footer>
+        <p><small>© Copyright 2019 by Angelika Fogasova. All rights reserved.</small></p>
+    </footer>
 </body>
 </html>

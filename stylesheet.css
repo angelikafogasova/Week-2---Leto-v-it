@@ -1,3 +1,14 @@
+/* bacground*/
 body {
-    background-color: blanchedalmond
+    background-image: linear-gradient(rgba(0, 0, 255, 0.9), rgba(255, 255, 0, 0.5)),
+    url("../Week-2---Leto-v-it/Images/background.jpg");
+    color: azure;
 }
+
+/* margins */
+main {
+    margin-left: 2em
+}
+
+/* font */
+
