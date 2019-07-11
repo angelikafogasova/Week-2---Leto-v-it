@@ -1,14 +1,82 @@
+
 /* bacground*/
+
 body {
     background-image: linear-gradient(rgba(0, 0, 255, 0.9), rgba(255, 255, 0, 0.5)),
     url("../Week-2---Leto-v-it/Images/background.jpg");
     color: azure;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.friendPost {
+background-color: rgba(228, 208, 208, 0.2);
+padding: 1em
 }
 
 /* margins */
+
 main {
     margin-left: 2em
 }
 
+/*navigation pane */
+
+ul {
+    list-style-type: none;
+    margin-left: 2rem;
+    padding: 0;
+    overflow: hidden;
+    background-color:rgba(228, 208, 208, 0.5);
+    text-align: justify;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1.3rem;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: blue;
+  }
+
+  .menu input[type=text] {
+      float: right;
+      padding: 0em;
+      border: none;
+      margin-top: 1.2em;
+      margin-right: 1em;
+      margin-inline-end: 1em;
+      font-size: 1em;
+  }
+
+  @media screen and (max-width: 600px) {
+    .topnav a, .topnav input[type=text] {
+      float: none;
+      display: inline-block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 1rem;
+    }
+    .topnav input[type=text] {
+      border: 1em solid #ccc;
+    }
+  }
+
+  .mypost {
+      color: azure;
+      background-color: darkgray
+  }
 /* font */
 
+/* footer */
+.footer {
+    padding-left: 2em
+}
