@@ -1,0 +1,12 @@
+<svg width="580" height="400" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <defs>
+  <filter height="200%" width="200%" y="-50%" x="-50%" id="svg_3_blur">
+   <feGaussianBlur stdDeviation="0" in="SourceGraphic"/>
+  </filter>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <text filter="url(#svg_3_blur)" opacity="0.97" font-style="normal" font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="178" id="svg_3" y="261.570313" x="8.046875" stroke-width="8" stroke="#8ac6d1" fill="#bbded6">FaceIT</text>
+ </g>
+</svg>

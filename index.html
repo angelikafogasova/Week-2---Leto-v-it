@@ -3,10 +3,11 @@
 
 <!--Initial settings-->
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <title>FaceIT</title>
-    <link rel="stylesheet" href="./stylesheet.css" type="text/css">
+    <link rel="stylesheet" href="./main.css" type="text/css">
     <meta name="description" content="Social site for people working in IT.">
     <meta name="author" content="Angelika Fogasova">
     <meta name="viewport" content="width=device-width,initial scale=1, maximum-scale=1,user-scalable=0">
@@ -14,90 +15,193 @@
 
 
 <!-- Header -->
-<header>
-        <nav class="menu">
+<body>
+    <header>
+        <img class="logo" src="../Week-2---Leto-v-it/logo.svg" alt="FaceIT logo" height="65" width="120">
+        <h1>Where no one calls you a geek, because we all are</h1>
+        <nav>
             <ul>
-                <li><a href="#">Home</a></li>
+                <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="#">Settings</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#">Profile</a></li>
                 <li><a href="#">Log out</a></li>
-                <li><input type="text" placeholder="Search.."></li>
             </ul>
         </nav>
-</header>
+    </header>
 
 <!-- User inputs-->
-<body>
-<main>
-        <h1> <img src="../Week-2---Leto-v-it/Images/female-avatar.png" alt="random female avatar" height="42" width="42"> FaceIT - Javangelika</h1>
-        <p>Welcome to the social network where no one calls you a geek because we all are.</p>
-        <p>
-            <small><time>2019</time></small>
-        </p>
-        <hr>
-    <section class="my post">
-                <h3>What did you code today?</h3>
-            <input></input>
-                    <br>
-                    <input type="text"
-                        placeholder="Wanna share sth else?">
-                    </input>
-    </section>
-    <section class="my-post">
-        <p>Put your photo here</p>
-        <input type="image" alt="image of choice input by the user">  
-    </section>
-    <section class="my-post">
-        <p>What you're coding in?</p>
-            <select name="your programming lannguage" id="coding-language">
-                <option value="Java">Java</option>
-                <option value="C#">C#</option>
-                <option value="Python">Python</option>
-                <option value="other">Other</option>
-            </select>
-    </section>
-        <br>
-    <section>
-        <label>Coding hours today</label>
-        <br>
-        <input type="number" name="coding hours" value="0">
-    </section>
-<hr>
+
+    <div class="content">
+        <main>
+            <section class="timeline">
+                <form id="post-add-form">  
+                    <h2> <img src="../Week-2---Leto-v-it/Images/female-avatar.png" alt="random female avatar" height="42" width="42"> Javangelika</h2>
+                        <h3>What did you code today?</h3>
+                        <div class="field">
+                            <label for="description">Descriptiom</label>
+                            <textarea name="description" cols="40" rows="6"></textarea>
+                        </div>
+                        <div class="drop-down">
+                            <label for="language">Your language</label> 
+                            <select name="your programming lannguage" id="coding-language">
+                                <option value="Java">Java</option>
+                                <option value="C#">C#</option>
+                                <option value="Python">Python</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div> 
+                        <div>
+                            <label>Coding hours</label>
+                            <input type="number" name="coding hours" value="0">
+                        </div>
+                        <div class="buttons">
+                            <input type="submit" value="Submit">
+                            <input type="hidden" value="Hidden post">
+                        </div>
+                </form>  
+    <hr>
 
 
 <!-- Friends' actions-->
-    <section>
-            <h3>What have your friends been up to?</h3>
-        <article class="friendPost">
-            <p class="friendName">
-                <img src="../Week-2---Leto-v-it/Images/male-avatar.png" alt="random male avatar" height="42" width="42">
-                <strong>František Horváth</strong>
-            </p>
-            <p>Accenture</p>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-        </article>
-        <br>
-        <article class="friendPost">
-            <p class="friendName">
-                <img src="../Week-2---Leto-v-it/Images/female-avatar.png" alt="random female avatar" height="42" width="42">
-                <strong>Jana Veselá</strong>
-            </p>
-            <p>ESET</p>
-            <img src="http://lorempixel.com/400/200/" alt="random picture">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
-        </article>
-    </section>
-</main>
-</body>
+                <div class="timeline-content">
+                    <article>
+                        <div class="article-info">
+                            <div class="author">      
+                                <img class="avatar" src="../Week-2---Leto-v-it/Images/male-avatar.png" alt="random male avatar" height="42" width="42">
+                                <h3 class="username">Fero Horváth</h3>
+                            </div>
+                            <time>17:00 July 14, 2019</time>
+                        </div>
+                        <h2>Accenture</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </article>
+                    <article>
+                            <div class="article-info">
+                                <div class="author">      
+                                    <img class="avatar" src="../Week-2---Leto-v-it/Images/female-avatar.png" alt="random female avatar" height="42" width="42">
+                                    <h3 class="username">Jana Veselá</h3>
+                                </div>
+                                <time>18:46 July 13, 2019</time>
+                            </div>
+                            <h2>ESET</h2>
+                            <img src="http://lorempixel.com/400/200/" alt="random picture">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                    </article>
+                    <article>
+                            <div class="article-info">
+                                <div class="author">      
+                                    <img class="avatar" src="../Week-2---Leto-v-it/Images/male-avatar.png" alt="random male avatar" height="42" width="42">
+                                    <h3 class="username">Šimon Táraj</h3>
+                                </div>
+                                <time>17:00 July 14, 2019</time>
+                            </div>
+                            <h2>Pixel Federation</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                    </article>
+                    <article>
+                        <div class="article-info">
+                            <div class="author">      
+                                <img class="avatar" src="../Week-2---Leto-v-it/Images/female-avatar.png" alt="random female avatar" height="42" width="42">
+                                <h3 class="username">Simona Lákavá</h3>
+                            </div>
+                                <time>18:46 July 13, 2019</time>
+                            </div>
+                            <h2>IBM</h2>
+                            <img src="../Week-2---Leto-v-it/Images/200.jpg" alt="random picture">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                    </article>
+                    <article>
+                        <div class="article-info">
+                            <div class="author">      
+                                <img class="avatar" src="../Week-2---Leto-v-it/Images/male-avatar.png" alt="random male avatar" height="42" width="42">
+                                <h3 class="username">Ján Unavený</h3>
+                            </div>
+                            <time>17:00 July 14, 2019</time>
+                        </div>
+                        <h2>Avast</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </article>
+                    <article>
+                        <div class="article-info">
+                            <div class="author">      
+                                <img class="avatar" src="../Week-2---Leto-v-it/Images/female-avatar.png" alt="random female avatar" height="42" width="42">
+                                <h3 class="username">Klára Kráľová</h3>
+                            </div>
+                                <time>18:46 July 13, 2019</time>
+                        </div>
+                        <h2>Google</h2>
+                        <img src="../Week-2---Leto-v-it/Images/201.jpg" alt="random picture">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </article>
+                </div> 
+            </section>
+        </main>
 
-<br>
-<br>
-<br>
-
+        <aside>
+            <h2>Fellow Coders</h2>
+            <ul>
+                <li>
+                    <div class="user-info">
+                        <img class="avatar" height="42" width="42" src="../Week-2---Leto-v-it/Images/male-avatar.png" alt="random male avatar">
+                        <span class="username">Fero Horváth</span>
+                    </div>
+                    <div class="status online"></div>
+                </li>
+                <li>
+                    <div class="user-info">
+                        <img class="avatar" alt="random female avatar" height="42" width="42" src="../Week-2---Leto-v-it/Images/female-avatar.png"/>
+                        <span class="username">Jana Veselá</span>
+                    </div>
+                    <div class="status offline"></div>
+                </li>
+                <li>
+                    <div class="user-info">
+                        <img class="avatar" alt="random male avatar" height="42" width="42" src="../Week-2---Leto-v-it/Images/male-avatar.png"/>
+                        <span class="username">Šimon Táraj</span>
+                    </div>
+                    <div class="status online"></div>
+                </li>
+                <li>
+                    <div class="user-info">
+                        <img class="avatar" alt="random female avatar" height="42" width="42" src="../Week-2---Leto-v-it/Images/female-avatar.png"/>
+                        <span class="username">Simona Lákavá</span>
+                    </div>
+                    <div class="status online"></div>
+                </li>
+                <li>
+                    <div class="user-info">
+                        <img class="avatar" alt="random male avatar" height="42" width="42" src="../Week-2---Leto-v-it/Images/male-avatar.png"/>
+                        <span class="username">Ján Unavený</span>
+                </div>
+                <div class="status online"></div>
+                </li>
+                <li>
+                    <div class="user-info">
+                        <img class="avatar" alt="random female avatar" height="42" width="42" src="../Week-2---Leto-v-it/Images/female-avatar.png"/>
+                        <span class="username">Klára Kráľová</span>
+                    </div>
+                    <div class="status offline"></div>
+                </li>
+            </ul>
+        </aside>
+    </div>
 
 <!-- Footer-->
     <footer class="footer">
-        <p><small>© Copyright 2019 by Angelika Fogasova. All rights reserved.</small></p>
+        <div>© Copyright 2019 by Angelika Fogasova. All rights reserved.</div>
     </footer>
+</body>
 
 </html>
