@@ -140,6 +140,9 @@ aside .user-info {
   justify-content: flex-start;
   align-items: center;
 }
+aside {
+  max-width: 25%;
+}
 
 /* Post adding */
 
